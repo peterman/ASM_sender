@@ -33,26 +33,27 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.SerialPort1 = New System.IO.Ports.SerialPort(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(118, 276)
+        Me.RichTextBox1.Location = New System.Drawing.Point(145, 12)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(670, 96)
+        Me.RichTextBox1.Size = New System.Drawing.Size(600, 162)
         Me.RichTextBox1.TabIndex = 1
         Me.RichTextBox1.Text = ""
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(452, 82)
+        Me.TextBox1.Location = New System.Drawing.Point(12, 101)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 20)
         Me.TextBox1.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1, 425)
+        Me.Button1.Location = New System.Drawing.Point(11, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(40, 23)
         Me.Button1.TabIndex = 3
@@ -64,14 +65,14 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(452, 108)
+        Me.TextBox2.Location = New System.Drawing.Point(12, 127)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 4
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(452, 135)
+        Me.TextBox3.Location = New System.Drawing.Point(12, 154)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 5
@@ -79,7 +80,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(497, 65)
+        Me.Label1.Location = New System.Drawing.Point(57, 84)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(39, 13)
         Me.Label1.TabIndex = 6
@@ -88,7 +89,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(452, 65)
+        Me.Label2.Location = New System.Drawing.Point(12, 84)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 13)
         Me.Label2.TabIndex = 7
@@ -96,18 +97,27 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(43, 425)
+        Me.Button2.Location = New System.Drawing.Point(53, 12)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(40, 23)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Stop"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(11, 43)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 9
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(761, 383)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -133,4 +143,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents SerialPort1 As IO.Ports.SerialPort
     Friend WithEvents Button2 As Button
+    Friend WithEvents ComboBox1 As ComboBox
 End Class
